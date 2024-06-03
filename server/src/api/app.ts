@@ -24,6 +24,7 @@ app.use(
 )
 
 //routes
+app.get('/', (req, res) => res.send('Book API'))
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/user', userRouter)
 app.use('/api/v1/book', bookRouter)

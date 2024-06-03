@@ -2,11 +2,11 @@
   "name": "book-management-api",
   "version": "1.0.0",
   "description": "api for book management application",
-  "main": "./src/server.ts",
+  "main": "/api/index.ts",
   "author": "arefinite",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/server.ts"
+    "dev": "nodemon ./api/index.ts"
     
   },
   "dependencies": {

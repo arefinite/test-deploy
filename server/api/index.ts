@@ -7,6 +7,8 @@ import { authRouter } from './route/auth.route'
 import { userRouter } from './route/user.route'
 import { bookRouter } from './route/book.route'
 import { ebookRouter } from './route/ebook.route'
+import { config } from '../config/config'
+import { dbConnect } from '../config/db'
 
 export const app = express()
 
@@ -32,3 +34,12 @@ app.use('/api/v1/ebook', ebookRouter)
 
 //global error handler
 app.use(globalErrorHandler)
+
+
+
+const PORT = config.PORT || 5000
+
+app.listen(PORT, () => {
+  dbConnect()
+  console.log('Server running on port', PORT)
+})

@@ -6,9 +6,7 @@
   "author": "arefinite",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon ./src/server.ts",
-    "vercel-build": "echo hello"
+    "dev": "nodemon ./src/server.ts"
     
   },
   "dependencies": {

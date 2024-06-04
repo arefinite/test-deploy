@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    // todo: move this value to env variable.
-    baseURL: 'http://localhost:4000',
+    
+    baseURL: 'http://localhost:4000' || '',
    
 });
 

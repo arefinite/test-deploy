@@ -1,11 +1,10 @@
-import axios from 'axios';
+import axios from 'axios'
+
+const baseURL = 'https://test-deploy-he88.onrender.com'
 
 const api = axios.create({
-    
-    baseURL: 'https://test-deploy-he88.onrender.com',
-   
-});
-
+  baseURL
+})
 
 export const createBook = async (data: FormData) =>
-    api.post('/api/v1/ebook', data)
+  api.post(`${baseURL}/api/v1/ebook`, data)
